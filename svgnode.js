@@ -43,7 +43,7 @@ class SVGNode {
 
     collidesWith(svg) {
         return (
-            this.x + svg.width >= svg.x && // left-edge
+            this.x + this.width >= svg.x && // left-edge
             this.x <= svg.x + svg.width && // right-edge
             this.y + this.height >= svg.y && // top-edge
             this.y <= svg.y + svg.height // bottom-edge
