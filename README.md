@@ -20,7 +20,7 @@ blocks.forEach((block) => {
 
 ## Getters and setters
 Currently these attributes have getters and setters: `x`, `y`, `width`, `height`.
-```
+```js
 const block = new SVGNode({ selector: ".block" });
 
 console.log(ball.x, ball.y);
@@ -45,10 +45,11 @@ ball.set("fill", "red");
 
 
 ## Collision detection
-In order to detect collisions between two SVG elements, you must create new SVGNode instances. Then use collidesWith, which returns `true` if they do:
+Use `collidesWith()`, which returns `true` if they do, and `false` if they don't:
 ```js
 const ball = new SVGNode({ selector: "#block" });
 const block = new SVGNode({ selector: ".block" });
 
 console.log(ball.collidesWith(block));
 ```
+> In order to detect collisions between two SVG elements, they must be SVGNode instances.
