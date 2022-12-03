@@ -5,7 +5,7 @@ This class helps with working with SVG elements. It provides some basic function
 - attribute operators: `get(attr)` and `set(attr)`
 - collision detection with other SVGNodes
 
-To create an instance of this class, you pass an object with either a DOM element selector:
+To create an instance of this class, you pass an object with either a CSS selector, or already selected DOM node:
 ```js
 // construct with selector
 const svgBall = new SVGNode({ selector: "#ball" });
